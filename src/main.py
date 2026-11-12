@@ -141,7 +141,9 @@ def etf(code, now):
             trading = time(9, 30) <= now.time() <= time(15, 0)
             fresh = (0 <= age <= 6) if trading else (0 <= age <= 60)
             row.update(code=code, pct_change=round((row["price"] / row["prev_close"] - 1) * 100, 3),
-                       age_minutes=age, is_fresh=fresh, state="fresh" if fresh else "stale",
+                       age_minutes=age, is_fresh=fresh,
+                       during_exchange_session=trading,
+                       state=("fresh_during_session" if fresh else "stale_during_session") if trading else "outside_exchange_session",
                        # f441 is not proven to be a trustworthy IOPV on this product.
                        iopv=None, premium_pct=None)
             if fresh: return row, errors
@@ -326,9 +328,15 @@ def settle(now, snap):
         if p["market"] == "588940":
             if now.date().isoformat() > target or (
                     now.date().isoformat() == target and now.time() >= time(16)):
-                before = [d for d in etf_bars if d < target]
-                if before and target in etf_bars and etf_bars[target] != etf_bars[max(before)]:
-                    actual = "涨" if etf_bars[target] > etf_bars[max(before)] else "跌"
+                # An incomplete free Yahoo series must never silently skip the
+                # preceding exchange session (e.g. missing 11/11) when scoring.
+                try:
+                    prevday = str(calendar("XSHG").previous_session(pd.Timestamp(target)).date())
+                except Exception:
+                    prevday = None
+                if (prevday in etf_bars and target in etf_bars
+                        and etf_bars[target] != etf_bars[prevday]):
+                    actual = "涨" if etf_bars[target] > etf_bars[prevday] else "跌"
                     source = snap.get("daily_source",{}).get("588940","unknown_daily_source")
         elif p["market"] == "SPX" and spx.get("bar_time") == target:
             change = spx.get("change_vs_prev_bar_pct")
