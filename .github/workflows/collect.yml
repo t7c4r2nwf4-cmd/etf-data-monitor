@@ -1,6 +1,12 @@
 name: ETF market snapshot
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/collect.yml'
+      - 'requirements.txt'
   schedule:
     # Beijing time = UTC+8; GitHub schedule may be delayed.
     - cron: '35,45 0 * * 1-5'       # 08:35 / 08:45
