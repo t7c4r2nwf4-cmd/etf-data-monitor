@@ -1,0 +1,170 @@
+{
+  "schema": "etf-feed-v2",
+  "collected_at": "2026-11-12T16:23:50.515855+08:00",
+  "slot": "other",
+  "quotes": {
+    "588940": {
+      "price": 0.678,
+      "prev_close": 0.675,
+      "quote_time": "2026-11-12T16:14:49+08:00",
+      "source": "tencent_fallback",
+      "volume": 4532548.0,
+      "turnover_cny": null,
+      "code": "588940",
+      "pct_change": 0.444,
+      "age_minutes": 9.03,
+      "is_fresh": true,
+      "state": "fresh",
+      "iopv": null,
+      "premium_pct": null
+    },
+    "513650": {
+      "price": 1.99,
+      "prev_close": 1.992,
+      "quote_time": "2026-11-12T16:15:00+08:00",
+      "source": "tencent_fallback",
+      "volume": 2637644.0,
+      "turnover_cny": null,
+      "code": "513650",
+      "pct_change": -0.1,
+      "age_minutes": 8.84,
+      "is_fresh": true,
+      "state": "fresh",
+      "iopv": null,
+      "premium_pct": null
+    }
+  },
+  "daily": {},
+  "us": {
+    "es": {
+      "symbol": "ES=F",
+      "price": 7610.5,
+      "bar_time": "2026-11-12T03:10:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 7610.0,
+      "change_vs_prev_bar_pct": 0.007,
+      "age_minutes": 13.8,
+      "is_fresh": true
+    },
+    "vix": {
+      "symbol": "^VIX",
+      "price": 17.48,
+      "bar_time": "2026-11-11T15:10:00-06:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 17.49,
+      "change_vs_prev_bar_pct": -0.057,
+      "age_minutes": 673.8,
+      "is_fresh": false
+    },
+    "usdcny": {
+      "symbol": "CNY=X",
+      "price": 6.668,
+      "bar_time": "2026-11-12T08:20:00+00:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 6.6681,
+      "change_vs_prev_bar_pct": -0.001,
+      "age_minutes": 3.8,
+      "is_fresh": true
+    },
+    "tnx": {
+      "symbol": "^TNX",
+      "price": 4.998,
+      "bar_time": "2026-11-11T13:55:00-06:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 4.998,
+      "change_vs_prev_bar_pct": 0.0,
+      "age_minutes": 748.8,
+      "is_fresh": false
+    },
+    "semis": {
+      "symbol": "^SOX",
+      "price": 10564.11035,
+      "bar_time": "2026-11-11T00:00:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "1d",
+      "previous_bar_close": 9998.33008,
+      "change_vs_prev_bar_pct": 5.659,
+      "age_minutes": 1643.8,
+      "is_fresh": true
+    },
+    "es_daily": {
+      "symbol": "ES=F",
+      "price": 7610.5,
+      "bar_time": "2026-11-12T00:00:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "1d",
+      "previous_bar_close": 7640.5,
+      "change_vs_prev_bar_pct": -0.393,
+      "age_minutes": 203.8,
+      "is_fresh": true
+    },
+    "spx": {
+      "source": "yfinance_post_close_reference",
+      "bar_time": "2026-11-11",
+      "price": 7619.37988,
+      "previous_bar_close": 7520.93018,
+      "change_vs_prev_bar_pct": 1.309
+    }
+  },
+  "errors": [
+    "588940: eastmoney: missing price, prior close or original timestamp",
+    "588940 daily: insufficient daily bars",
+    "513650: eastmoney: missing price, prior close or original timestamp",
+    "513650 daily: insufficient daily bars"
+  ],
+  "warnings": [
+    "PUBLIC QUOTES MAY BE DELAYED",
+    "Unverified IOPV is intentionally null; never infer current premium."
+  ],
+  "new_predictions": [],
+  "new_settlements": [],
+  "stats": {
+    "SPX_09": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "SPX_14": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "588940_09": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "588940_14": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "paper_t": {
+      "closed": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "source": "no_verified_iopv_no_simulated_fills"
+    },
+    "legacy_chatgpt_history": "NOT_IMPORTED_NOT_OVERWRITTEN"
+  },
+  "health": {
+    "etf_588940_fresh": true,
+    "etf_513650_fresh": true,
+    "spx_close_available": true,
+    "es_available": true,
+    "verified_iopv_available": false
+  }
+}
