@@ -169,6 +169,36 @@ def etf_daily(code):
     return bars
 
 
+
+def etf_daily_tencent(code):
+    """Try Tencent's public unadjusted daily K-line feed."""
+    r = SESSION.get("https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+                    params={"param":"sh"+code+",day,,,30"}, timeout=12)
+    r.raise_for_status()
+    body = r.json().get("data") or {}
+    item = body.get("sh"+code) or {}
+    rows = item.get("day") or item.get("qfqday") or []
+    bars = []
+    for fields in rows:
+        if len(fields) >= 3 and num(fields[2]):
+            bars.append({"date":str(fields[0]), "close":num(fields[2])})
+    if len(bars) < 2:
+        raise ValueError("Tencent daily K-line unavailable")
+    return bars
+
+
+def etf_daily_yahoo(code):
+    """Last-resort Yahoo daily ETF quotes; not exchange-certified."""
+    d = yf.Ticker(code+".SS").history(period="1mo",interval="1d", auto_adjust=False)
+    if d is None or len(d)<2: raise ValueError("Yahoo ETF daily unavailable")
+    rows = []
+    for stamp, record in d.iterrows():
+        if pd.notna(record["Close"]) and num(record["Close"]):
+            rows.append({"date":str(stamp.date()),"close":round(float(record["Close"]),6)})
+    if len(rows)<2: raise ValueError("Yahoo ETF daily bars insufficient")
+    return rows
+
+
 def yahoo(symbol, period="10d", interval="1d"):
     d = yf.Ticker(symbol).history(period=period, interval=interval, auto_adjust=False)
     if d is None or d.empty: raise ValueError("no Yahoo data")
@@ -230,15 +260,20 @@ def us_data(now):
 
 def collect(now):
     snapshot = {"schema":"etf-feed-v2", "collected_at":now.isoformat(),
-                "slot":slot(now), "quotes":{}, "daily":{}, "us":{},
+                "slot":slot(now), "quotes":{}, "daily":{}, "daily_source":{}, "us":{},
                 "errors":[], "warnings":["PUBLIC QUOTES MAY BE DELAYED",
                  "Unverified IOPV is intentionally null; never infer current premium."]}
     for code in CODES:
         q, errs = etf(code, now)
         if q: snapshot["quotes"][code] = q
         snapshot["errors"] += [code + ": " + x for x in errs]
-        try: snapshot["daily"][code] = etf_daily(code)
-        except Exception as e: snapshot["errors"].append(code + " daily: " + str(e)[:130])
+        for source in (etf_daily, etf_daily_tencent, etf_daily_yahoo):
+            try:
+                snapshot["daily"][code] = source(code)
+                snapshot["daily_source"][code] = source.__name__
+                break
+            except Exception as e:
+                snapshot["errors"].append(code + " " + source.__name__ + ": " + str(e)[:130])
     snapshot["us"], errs = us_data(now)
     snapshot["errors"] += errs
     return snapshot
@@ -294,7 +329,7 @@ def settle(now, snap):
                 before = [d for d in etf_bars if d < target]
                 if before and target in etf_bars and etf_bars[target] != etf_bars[max(before)]:
                     actual = "涨" if etf_bars[target] > etf_bars[max(before)] else "跌"
-                    source = "eastmoney_dated_daily_kline"
+                    source = snap.get("daily_source",{}).get("588940","unknown_daily_source")
         elif p["market"] == "SPX" and spx.get("bar_time") == target:
             change = spx.get("change_vs_prev_bar_pct")
             if change is not None and change != 0:
