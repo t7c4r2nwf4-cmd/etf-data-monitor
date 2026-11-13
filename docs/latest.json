@@ -1,18 +1,18 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-13T09:45:24.027226+08:00",
+  "collected_at": "2026-11-13T11:11:28.422898+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
-      "price": 0.687,
+      "price": 0.675,
       "prev_close": 0.678,
-      "quote_time": "2026-11-13T09:45:21+08:00",
+      "quote_time": "2026-11-13T11:11:27+08:00",
       "source": "tencent_fallback",
-      "volume": 620443.0,
+      "volume": 1758292.0,
       "turnover_cny": null,
       "code": "588940",
-      "pct_change": 1.327,
-      "age_minutes": 0.05,
+      "pct_change": -0.442,
+      "age_minutes": 0.02,
       "is_fresh": true,
       "during_exchange_session": true,
       "state": "fresh_during_session",
@@ -22,13 +22,13 @@
     "513650": {
       "price": 2.0,
       "prev_close": 1.99,
-      "quote_time": "2026-11-13T09:45:28+08:00",
+      "quote_time": "2026-11-13T11:11:31+08:00",
       "source": "tencent_fallback",
-      "volume": 407373.0,
+      "volume": 1357482.0,
       "turnover_cny": null,
       "code": "513650",
       "pct_change": 0.503,
-      "age_minutes": -0.07,
+      "age_minutes": -0.04,
       "is_fresh": false,
       "during_exchange_session": true,
       "state": "stale_during_session",
@@ -128,7 +128,7 @@
       },
       {
         "date": "2026-11-13",
-        "close": 0.694
+        "close": 0.678
       }
     ],
     "513650": [
@@ -222,7 +222,7 @@
       },
       {
         "date": "2026-11-13",
-        "close": 2.002
+        "close": 1.999
       }
     ]
   },
@@ -233,13 +233,13 @@
   "us": {
     "es": {
       "symbol": "ES=F",
-      "price": 7643.5,
-      "bar_time": "2026-11-12T20:35:00-05:00",
+      "price": 7640.25,
+      "bar_time": "2026-11-12T22:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 7643.25,
-      "change_vs_prev_bar_pct": 0.003,
-      "age_minutes": 10.4,
+      "previous_bar_close": 7637.5,
+      "change_vs_prev_bar_pct": 0.036,
+      "age_minutes": 11.5,
       "is_fresh": true
     },
     "vix": {
@@ -250,18 +250,18 @@
       "bar_interval": "5m",
       "previous_bar_close": 18.71,
       "change_vs_prev_bar_pct": -0.107,
-      "age_minutes": 275.4,
+      "age_minutes": 361.5,
       "is_fresh": false
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6678,
-      "bar_time": "2026-11-13T01:45:00+00:00",
+      "price": 6.6728,
+      "bar_time": "2026-11-13T03:10:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6581,
-      "change_vs_prev_bar_pct": 0.146,
-      "age_minutes": 0.4,
+      "previous_bar_close": 6.6729,
+      "change_vs_prev_bar_pct": -0.002,
+      "age_minutes": 1.5,
       "is_fresh": true
     },
     "tnx": {
@@ -272,7 +272,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 5.105,
       "change_vs_prev_bar_pct": -0.039,
-      "age_minutes": 350.4,
+      "age_minutes": 436.5,
       "is_fresh": false
     },
     "semis": {
@@ -283,18 +283,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 10564.11035,
       "change_vs_prev_bar_pct": -0.544,
-      "age_minutes": 1245.4,
+      "age_minutes": 1331.5,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7643.5,
+      "price": 7640.75,
       "bar_time": "2026-11-12T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7640.5,
-      "change_vs_prev_bar_pct": 0.039,
-      "age_minutes": 1245.4,
+      "change_vs_prev_bar_pct": 0.003,
+      "age_minutes": 1331.5,
       "is_fresh": true
     },
     "spx": {
@@ -307,11 +307,11 @@
   },
   "errors": [
     "588940: eastmoney: missing price, prior close or original timestamp",
-    "588940 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "588940 etf_daily: insufficient daily bars",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
     "513650: eastmoney: missing price, prior close or original timestamp",
     "513650: tencent: quote is stale",
-    "513650 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "513650 etf_daily: insufficient daily bars",
     "513650 etf_daily_tencent: Tencent daily K-line unavailable"
   ],
   "warnings": [
