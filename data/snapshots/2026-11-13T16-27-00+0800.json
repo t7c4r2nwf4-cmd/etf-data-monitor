@@ -1,0 +1,367 @@
+{
+  "schema": "etf-feed-v2",
+  "collected_at": "2026-11-13T16:27:00.259620+08:00",
+  "slot": "other",
+  "quotes": {
+    "588940": {
+      "price": 0.666,
+      "prev_close": 0.678,
+      "quote_time": "2026-11-13T16:14:45+08:00",
+      "source": "tencent_fallback",
+      "volume": 3250265.0,
+      "turnover_cny": null,
+      "code": "588940",
+      "pct_change": -1.77,
+      "age_minutes": 12.25,
+      "is_fresh": true,
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
+      "iopv": null,
+      "premium_pct": null
+    },
+    "513650": {
+      "price": 1.995,
+      "prev_close": 1.99,
+      "quote_time": "2026-11-13T16:14:40+08:00",
+      "source": "tencent_fallback",
+      "volume": 2512466.0,
+      "turnover_cny": null,
+      "code": "513650",
+      "pct_change": 0.251,
+      "age_minutes": 12.34,
+      "is_fresh": true,
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
+      "iopv": null,
+      "premium_pct": null
+    }
+  },
+  "daily": {
+    "588940": [
+      {
+        "date": "2026-10-13",
+        "close": 0.74
+      },
+      {
+        "date": "2026-10-14",
+        "close": 0.715
+      },
+      {
+        "date": "2026-10-15",
+        "close": 0.707
+      },
+      {
+        "date": "2026-10-16",
+        "close": 0.703
+      },
+      {
+        "date": "2026-10-19",
+        "close": 0.688
+      },
+      {
+        "date": "2026-10-20",
+        "close": 0.695
+      },
+      {
+        "date": "2026-10-21",
+        "close": 0.697
+      },
+      {
+        "date": "2026-10-22",
+        "close": 0.675
+      },
+      {
+        "date": "2026-10-23",
+        "close": 0.699
+      },
+      {
+        "date": "2026-10-26",
+        "close": 0.678
+      },
+      {
+        "date": "2026-10-27",
+        "close": 0.649
+      },
+      {
+        "date": "2026-10-28",
+        "close": 0.664
+      },
+      {
+        "date": "2026-10-29",
+        "close": 0.633
+      },
+      {
+        "date": "2026-10-30",
+        "close": 0.601
+      },
+      {
+        "date": "2026-11-02",
+        "close": 0.619
+      },
+      {
+        "date": "2026-11-03",
+        "close": 0.595
+      },
+      {
+        "date": "2026-11-04",
+        "close": 0.663
+      },
+      {
+        "date": "2026-11-05",
+        "close": 0.666
+      },
+      {
+        "date": "2026-11-06",
+        "close": 0.65
+      },
+      {
+        "date": "2026-11-09",
+        "close": 0.652
+      },
+      {
+        "date": "2026-11-10",
+        "close": 0.657
+      },
+      {
+        "date": "2026-11-11",
+        "close": 0.675
+      },
+      {
+        "date": "2026-11-13",
+        "close": 0.666
+      }
+    ],
+    "513650": [
+      {
+        "date": "2026-10-13",
+        "close": 2.036
+      },
+      {
+        "date": "2026-10-14",
+        "close": 2.035
+      },
+      {
+        "date": "2026-10-15",
+        "close": 1.991
+      },
+      {
+        "date": "2026-10-16",
+        "close": 2.011
+      },
+      {
+        "date": "2026-10-19",
+        "close": 2.0
+      },
+      {
+        "date": "2026-10-20",
+        "close": 1.982
+      },
+      {
+        "date": "2026-10-21",
+        "close": 1.998
+      },
+      {
+        "date": "2026-10-22",
+        "close": 1.982
+      },
+      {
+        "date": "2026-10-23",
+        "close": 1.959
+      },
+      {
+        "date": "2026-10-26",
+        "close": 1.953
+      },
+      {
+        "date": "2026-10-27",
+        "close": 1.985
+      },
+      {
+        "date": "2026-10-28",
+        "close": 2.015
+      },
+      {
+        "date": "2026-10-29",
+        "close": 2.011
+      },
+      {
+        "date": "2026-10-30",
+        "close": 1.982
+      },
+      {
+        "date": "2026-11-02",
+        "close": 1.983
+      },
+      {
+        "date": "2026-11-03",
+        "close": 1.942
+      },
+      {
+        "date": "2026-11-04",
+        "close": 1.969
+      },
+      {
+        "date": "2026-11-05",
+        "close": 1.995
+      },
+      {
+        "date": "2026-11-06",
+        "close": 1.934
+      },
+      {
+        "date": "2026-11-09",
+        "close": 1.944
+      },
+      {
+        "date": "2026-11-10",
+        "close": 1.985
+      },
+      {
+        "date": "2026-11-11",
+        "close": 1.992
+      },
+      {
+        "date": "2026-11-13",
+        "close": 1.995
+      }
+    ]
+  },
+  "daily_source": {
+    "588940": "etf_daily_yahoo",
+    "513650": "etf_daily_yahoo"
+  },
+  "us": {
+    "es": {
+      "symbol": "ES=F",
+      "price": 7612.5,
+      "bar_time": "2026-11-13T03:15:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 7612.5,
+      "change_vs_prev_bar_pct": 0.0,
+      "age_minutes": 12.0,
+      "is_fresh": true
+    },
+    "vix": {
+      "symbol": "^VIX",
+      "price": 18.69,
+      "bar_time": "2026-11-12T15:10:00-06:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 18.71,
+      "change_vs_prev_bar_pct": -0.107,
+      "age_minutes": 677.0,
+      "is_fresh": false
+    },
+    "usdcny": {
+      "symbol": "CNY=X",
+      "price": 6.6697,
+      "bar_time": "2026-11-13T08:25:00+00:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 6.6599,
+      "change_vs_prev_bar_pct": 0.147,
+      "age_minutes": 2.0,
+      "is_fresh": true
+    },
+    "tnx": {
+      "symbol": "^TNX",
+      "price": 5.103,
+      "bar_time": "2026-11-12T13:55:00-06:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "5m",
+      "previous_bar_close": 5.105,
+      "change_vs_prev_bar_pct": -0.039,
+      "age_minutes": 752.0,
+      "is_fresh": false
+    },
+    "semis": {
+      "symbol": "^SOX",
+      "price": 10506.66992,
+      "bar_time": "2026-11-12T00:00:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "1d",
+      "previous_bar_close": 10564.11035,
+      "change_vs_prev_bar_pct": -0.544,
+      "age_minutes": 1647.0,
+      "is_fresh": true
+    },
+    "es_daily": {
+      "symbol": "ES=F",
+      "price": 7612.25,
+      "bar_time": "2026-11-13T00:00:00-05:00",
+      "source": "yfinance_unofficial",
+      "bar_interval": "1d",
+      "previous_bar_close": 7615.25,
+      "change_vs_prev_bar_pct": -0.039,
+      "age_minutes": 207.0,
+      "is_fresh": true
+    },
+    "spx": {
+      "source": "yfinance_post_close_reference",
+      "bar_time": "2026-11-12",
+      "price": 7592.3999,
+      "previous_bar_close": 7619.37988,
+      "change_vs_prev_bar_pct": -0.354
+    }
+  },
+  "errors": [
+    "588940: eastmoney: missing price, prior close or original timestamp",
+    "588940 etf_daily: insufficient daily bars",
+    "588940 etf_daily_tencent: Tencent daily K-line unavailable",
+    "513650: eastmoney: missing price, prior close or original timestamp",
+    "513650 etf_daily: insufficient daily bars",
+    "513650 etf_daily_tencent: Tencent daily K-line unavailable"
+  ],
+  "warnings": [
+    "PUBLIC QUOTES MAY BE DELAYED",
+    "Unverified IOPV is intentionally null; never infer current premium."
+  ],
+  "new_predictions": [],
+  "new_settlements": [],
+  "stats": {
+    "SPX_09": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "SPX_14": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "588940_09": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "588940_14": {
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "locked": 0
+    },
+    "paper_t": {
+      "closed": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy_pct": null,
+      "source": "no_verified_iopv_no_simulated_fills"
+    },
+    "legacy_chatgpt_history": "NOT_IMPORTED_NOT_OVERWRITTEN"
+  },
+  "health": {
+    "etf_588940_fresh": true,
+    "etf_513650_fresh": true,
+    "spx_close_available": true,
+    "es_available": true,
+    "verified_iopv_available": false
+  }
+}
