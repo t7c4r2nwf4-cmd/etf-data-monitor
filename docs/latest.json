@@ -1,47 +1,43 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-17T09:24:42.192147+08:00",
+  "collected_at": "2026-11-17T14:15:25.876824+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
-      "price": 0.612,
+      "price": 0.63,
       "prev_close": 0.63,
-      "quote_time": "2026-11-17T09:24:42+08:00",
+      "quote_time": "2026-11-17T14:15:24+08:00",
       "source": "tencent_fallback",
-      "volume": null,
+      "volume": 3415929.0,
       "turnover_cny": null,
       "code": "588940",
-      "pct_change": -2.857,
-      "age_minutes": 0.0,
+      "pct_change": 0.0,
+      "age_minutes": 0.03,
       "is_fresh": true,
-      "during_exchange_session": false,
-      "state": "outside_exchange_session",
+      "during_exchange_session": true,
+      "state": "fresh_during_session",
       "iopv": null,
       "premium_pct": null
     },
     "513650": {
-      "price": 1.93,
+      "price": 1.932,
       "prev_close": 1.954,
-      "quote_time": "2026-11-17T09:24:47+08:00",
+      "quote_time": "2026-11-17T14:15:29+08:00",
       "source": "tencent_fallback",
-      "volume": null,
+      "volume": 2605016.0,
       "turnover_cny": null,
       "code": "513650",
-      "pct_change": -1.228,
-      "age_minutes": -0.08,
+      "pct_change": -1.126,
+      "age_minutes": -0.05,
       "is_fresh": false,
-      "during_exchange_session": false,
-      "state": "outside_exchange_session",
+      "during_exchange_session": true,
+      "state": "stale_during_session",
       "iopv": null,
       "premium_pct": null
     }
   },
   "daily": {
     "588940": [
-      {
-        "date": "2026-10-16",
-        "close": 0.703
-      },
       {
         "date": "2026-10-19",
         "close": 0.688
@@ -121,13 +117,13 @@
       {
         "date": "2026-11-13",
         "close": 0.666
+      },
+      {
+        "date": "2026-11-17",
+        "close": 0.635
       }
     ],
     "513650": [
-      {
-        "date": "2026-10-16",
-        "close": 2.011
-      },
       {
         "date": "2026-10-19",
         "close": 2.0
@@ -207,6 +203,10 @@
       {
         "date": "2026-11-13",
         "close": 1.995
+      },
+      {
+        "date": "2026-11-17",
+        "close": 1.934
       }
     ]
   },
@@ -217,13 +217,13 @@
   "us": {
     "es": {
       "symbol": "ES=F",
-      "price": 7448.0,
-      "bar_time": "2026-11-16T20:10:00-05:00",
+      "price": 7429.25,
+      "bar_time": "2026-11-17T01:05:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 7443.25,
-      "change_vs_prev_bar_pct": 0.064,
-      "age_minutes": 14.7,
+      "previous_bar_close": 7430.0,
+      "change_vs_prev_bar_pct": -0.01,
+      "age_minutes": 10.4,
       "is_fresh": true
     },
     "vix": {
@@ -234,18 +234,18 @@
       "bar_interval": "5m",
       "previous_bar_close": 23.05,
       "change_vs_prev_bar_pct": -0.738,
-      "age_minutes": 254.7,
+      "age_minutes": 545.4,
       "is_fresh": false
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6539,
-      "bar_time": "2026-11-17T01:15:00+00:00",
+      "price": 6.6649,
+      "bar_time": "2026-11-17T06:15:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6648,
-      "change_vs_prev_bar_pct": -0.164,
-      "age_minutes": 9.7,
+      "previous_bar_close": 6.6645,
+      "change_vs_prev_bar_pct": 0.006,
+      "age_minutes": 0.4,
       "is_fresh": true
     },
     "tnx": {
@@ -256,29 +256,29 @@
       "bar_interval": "5m",
       "previous_bar_close": 5.123,
       "change_vs_prev_bar_pct": -0.039,
-      "age_minutes": 329.7,
+      "age_minutes": 620.4,
       "is_fresh": false
     },
     "semis": {
       "symbol": "^SOX",
-      "price": 9610.65234,
+      "price": 9610.65039,
       "bar_time": "2026-11-16T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 10146.32031,
       "change_vs_prev_bar_pct": -5.279,
-      "age_minutes": 1224.7,
+      "age_minutes": 1515.4,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7448.0,
-      "bar_time": "2026-11-16T00:00:00-05:00",
+      "price": 7429.5,
+      "bar_time": "2026-11-17T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
-      "previous_bar_close": 7583.0,
-      "change_vs_prev_bar_pct": -1.78,
-      "age_minutes": 1224.7,
+      "previous_bar_close": 7439.0,
+      "change_vs_prev_bar_pct": -0.128,
+      "age_minutes": 75.4,
       "is_fresh": true
     },
     "spx": {
@@ -291,11 +291,11 @@
   },
   "errors": [
     "588940: eastmoney: missing price, prior close or original timestamp",
-    "588940 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "588940 etf_daily: insufficient daily bars",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
     "513650: eastmoney: missing price, prior close or original timestamp",
     "513650: tencent: quote is stale",
-    "513650 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "513650 etf_daily: insufficient daily bars",
     "513650 etf_daily_tencent: Tencent daily K-line unavailable"
   ],
   "warnings": [
