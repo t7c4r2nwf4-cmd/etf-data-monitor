@@ -1,6 +1,6 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-18T16:30:53.093030+08:00",
+  "collected_at": "2026-11-18T17:10:39.236555+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
@@ -12,7 +12,7 @@
       "turnover_cny": null,
       "code": "588940",
       "pct_change": 2.047,
-      "age_minutes": 15.95,
+      "age_minutes": 55.72,
       "is_fresh": true,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
@@ -28,7 +28,7 @@
       "turnover_cny": null,
       "code": "513650",
       "pct_change": 0.259,
-      "age_minutes": 15.9,
+      "age_minutes": 55.67,
       "is_fresh": true,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
@@ -225,35 +225,35 @@
   "us": {
     "es": {
       "symbol": "ES=F",
-      "price": 7392.75,
-      "bar_time": "2026-11-18T03:20:00-05:00",
+      "price": 7396.75,
+      "bar_time": "2026-11-18T04:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 7393.0,
-      "change_vs_prev_bar_pct": -0.003,
-      "age_minutes": 10.9,
+      "previous_bar_close": 7397.5,
+      "change_vs_prev_bar_pct": -0.01,
+      "age_minutes": 10.7,
       "is_fresh": true
     },
     "vix": {
       "symbol": "^VIX",
-      "price": 24.2,
-      "bar_time": "2026-11-18T02:15:00-06:00",
+      "price": 23.88,
+      "bar_time": "2026-11-18T02:55:00-06:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 25.45,
-      "change_vs_prev_bar_pct": -4.912,
-      "age_minutes": 15.9,
+      "previous_bar_close": 23.86,
+      "change_vs_prev_bar_pct": 0.084,
+      "age_minutes": 15.7,
       "is_fresh": true
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6645,
-      "bar_time": "2026-11-18T08:30:00+00:00",
+      "price": 6.6649,
+      "bar_time": "2026-11-18T09:10:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6644,
-      "change_vs_prev_bar_pct": 0.002,
-      "age_minutes": 0.9,
+      "previous_bar_close": 6.665,
+      "change_vs_prev_bar_pct": -0.002,
+      "age_minutes": 0.7,
       "is_fresh": true
     },
     "tnx": {
@@ -264,7 +264,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 5.101,
       "change_vs_prev_bar_pct": 0.039,
-      "age_minutes": 755.9,
+      "age_minutes": 795.7,
       "is_fresh": false
     },
     "semis": {
@@ -275,18 +275,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 9610.65039,
       "change_vs_prev_bar_pct": 0.335,
-      "age_minutes": 1650.9,
+      "age_minutes": 1690.7,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7392.75,
+      "price": 7396.75,
       "bar_time": "2026-11-18T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7359.0,
-      "change_vs_prev_bar_pct": 0.459,
-      "age_minutes": 210.9,
+      "change_vs_prev_bar_pct": 0.513,
+      "age_minutes": 250.7,
       "is_fresh": true
     },
     "spx": {
