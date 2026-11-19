@@ -1,6 +1,6 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-19T16:33:30.359730+08:00",
+  "collected_at": "2026-11-19T17:12:29.275040+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
@@ -12,7 +12,7 @@
       "turnover_cny": null,
       "code": "588940",
       "pct_change": 1.852,
-      "age_minutes": 18.52,
+      "age_minutes": 57.5,
       "is_fresh": true,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
@@ -28,7 +28,7 @@
       "turnover_cny": null,
       "code": "513650",
       "pct_change": -0.207,
-      "age_minutes": 18.52,
+      "age_minutes": 57.5,
       "is_fresh": true,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
@@ -233,35 +233,35 @@
   "us": {
     "es": {
       "symbol": "ES=F",
-      "price": 7421.75,
-      "bar_time": "2026-11-19T03:20:00-05:00",
+      "price": 7422.75,
+      "bar_time": "2026-11-19T04:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 7422.0,
-      "change_vs_prev_bar_pct": -0.003,
-      "age_minutes": 13.5,
+      "previous_bar_close": 7422.75,
+      "change_vs_prev_bar_pct": 0.0,
+      "age_minutes": 12.5,
       "is_fresh": true
     },
     "vix": {
       "symbol": "^VIX",
-      "price": 21.97,
-      "bar_time": "2026-11-19T02:15:00-06:00",
+      "price": 21.86,
+      "bar_time": "2026-11-19T02:55:00-06:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 24.56,
-      "change_vs_prev_bar_pct": -10.546,
-      "age_minutes": 18.5,
+      "previous_bar_close": 21.91,
+      "change_vs_prev_bar_pct": -0.228,
+      "age_minutes": 17.5,
       "is_fresh": true
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6642,
-      "bar_time": "2026-11-19T08:30:00+00:00",
+      "price": 6.6648,
+      "bar_time": "2026-11-19T09:10:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6642,
+      "previous_bar_close": 6.6648,
       "change_vs_prev_bar_pct": 0.0,
-      "age_minutes": 3.5,
+      "age_minutes": 2.5,
       "is_fresh": true
     },
     "tnx": {
@@ -272,7 +272,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 5.068,
       "change_vs_prev_bar_pct": -0.039,
-      "age_minutes": 758.5,
+      "age_minutes": 797.5,
       "is_fresh": false
     },
     "semis": {
@@ -283,18 +283,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 9642.87988,
       "change_vs_prev_bar_pct": 0.103,
-      "age_minutes": 1653.5,
+      "age_minutes": 1692.5,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7421.75,
+      "price": 7423.25,
       "bar_time": "2026-11-19T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7340.5,
-      "change_vs_prev_bar_pct": 1.107,
-      "age_minutes": 213.5,
+      "change_vs_prev_bar_pct": 1.127,
+      "age_minutes": 252.5,
       "is_fresh": true
     },
     "spx": {
@@ -306,11 +306,11 @@
     }
   },
   "errors": [
-    "588940: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.588940&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
-    "588940 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "588940: eastmoney: missing price, prior close or original timestamp",
+    "588940 etf_daily: insufficient daily bars",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
-    "513650: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.513650&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
-    "513650 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "513650: eastmoney: missing price, prior close or original timestamp",
+    "513650 etf_daily: insufficient daily bars",
     "513650 etf_daily_tencent: Tencent daily K-line unavailable"
   ],
   "warnings": [
