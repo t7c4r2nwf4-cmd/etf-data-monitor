@@ -1,6 +1,6 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-24T16:37:24.492188+08:00",
+  "collected_at": "2026-11-24T17:14:56.616253+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
@@ -12,7 +12,7 @@
       "turnover_cny": null,
       "code": "588940",
       "pct_change": 1.572,
-      "age_minutes": 22.46,
+      "age_minutes": 59.99,
       "is_fresh": true,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
@@ -28,8 +28,8 @@
       "turnover_cny": null,
       "code": "513650",
       "pct_change": 2.831,
-      "age_minutes": 22.51,
-      "is_fresh": true,
+      "age_minutes": 60.04,
+      "is_fresh": false,
       "during_exchange_session": false,
       "state": "outside_exchange_session",
       "iopv": null,
@@ -217,35 +217,35 @@
   "us": {
     "es": {
       "symbol": "ES=F",
-      "price": 7254.25,
-      "bar_time": "2026-11-24T03:25:00-05:00",
+      "price": 7231.75,
+      "bar_time": "2026-11-24T04:05:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 7262.0,
-      "change_vs_prev_bar_pct": -0.107,
-      "age_minutes": 12.4,
+      "previous_bar_close": 7231.5,
+      "change_vs_prev_bar_pct": 0.003,
+      "age_minutes": 9.9,
       "is_fresh": true
     },
     "vix": {
       "symbol": "^VIX",
-      "price": 26.26,
-      "bar_time": "2026-11-24T02:20:00-06:00",
+      "price": 27.22,
+      "bar_time": "2026-11-24T03:00:00-06:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 26.27,
-      "change_vs_prev_bar_pct": -0.038,
-      "age_minutes": 17.4,
+      "previous_bar_close": 27.21,
+      "change_vs_prev_bar_pct": 0.037,
+      "age_minutes": 14.9,
       "is_fresh": true
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6626,
-      "bar_time": "2026-11-24T08:35:00+00:00",
+      "price": 6.6633,
+      "bar_time": "2026-11-24T09:10:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6624,
-      "change_vs_prev_bar_pct": 0.003,
-      "age_minutes": 2.4,
+      "previous_bar_close": 6.6633,
+      "change_vs_prev_bar_pct": 0.0,
+      "age_minutes": 4.9,
       "is_fresh": true
     },
     "tnx": {
@@ -256,7 +256,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 4.922,
       "change_vs_prev_bar_pct": -0.081,
-      "age_minutes": 762.4,
+      "age_minutes": 799.9,
       "is_fresh": false
     },
     "semis": {
@@ -267,18 +267,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 8408.58984,
       "change_vs_prev_bar_pct": 14.027,
-      "age_minutes": 1657.4,
+      "age_minutes": 1694.9,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7254.75,
+      "price": 7231.75,
       "bar_time": "2026-11-24T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7254.5,
-      "change_vs_prev_bar_pct": 0.003,
-      "age_minutes": 217.4,
+      "change_vs_prev_bar_pct": -0.314,
+      "age_minutes": 254.9,
       "is_fresh": true
     },
     "spx": {
@@ -290,11 +290,12 @@
     }
   },
   "errors": [
-    "588940: eastmoney: missing price, prior close or original timestamp",
-    "588940 etf_daily: insufficient daily bars",
+    "588940: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.588940&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
+    "588940 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
-    "513650: eastmoney: missing price, prior close or original timestamp",
-    "513650 etf_daily: insufficient daily bars",
+    "513650: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.513650&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
+    "513650: tencent: quote is stale",
+    "513650 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "513650 etf_daily_tencent: Tencent daily K-line unavailable"
   ],
   "warnings": [
@@ -343,7 +344,7 @@
   },
   "health": {
     "etf_588940_fresh": true,
-    "etf_513650_fresh": true,
+    "etf_513650_fresh": false,
     "spx_close_available": true,
     "es_available": true,
     "verified_iopv_available": false
