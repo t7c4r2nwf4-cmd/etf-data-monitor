@@ -1,37 +1,37 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-26T14:11:25.489083+08:00",
+  "collected_at": "2026-11-26T15:33:29.844840+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
-      "price": 0.603,
+      "price": 0.605,
       "prev_close": 0.614,
-      "quote_time": "2026-11-26T14:11:26+08:00",
+      "quote_time": "2026-11-26T15:33:08+08:00",
       "source": "tencent_fallback",
-      "volume": 2796191.0,
+      "volume": 3441793.0,
       "turnover_cny": null,
       "code": "588940",
-      "pct_change": -1.792,
-      "age_minutes": -0.01,
-      "is_fresh": false,
-      "during_exchange_session": true,
-      "state": "stale_during_session",
+      "pct_change": -1.466,
+      "age_minutes": 0.36,
+      "is_fresh": true,
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
       "iopv": null,
       "premium_pct": null
     },
     "513650": {
-      "price": 1.863,
+      "price": 1.864,
       "prev_close": 1.846,
-      "quote_time": "2026-11-26T14:11:28+08:00",
+      "quote_time": "2026-11-26T15:33:31+08:00",
       "source": "tencent_fallback",
-      "volume": 3191831.0,
+      "volume": 3640734.0,
       "turnover_cny": null,
       "code": "513650",
-      "pct_change": 0.921,
-      "age_minutes": -0.04,
+      "pct_change": 0.975,
+      "age_minutes": -0.02,
       "is_fresh": false,
-      "during_exchange_session": true,
-      "state": "stale_during_session",
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
       "iopv": null,
       "premium_pct": null
     }
@@ -128,7 +128,7 @@
       },
       {
         "date": "2026-11-26",
-        "close": 0.606
+        "close": 0.605
       }
     ],
     "513650": [
@@ -222,7 +222,7 @@
       },
       {
         "date": "2026-11-26",
-        "close": 1.869
+        "close": 1.864
       }
     ]
   },
@@ -239,7 +239,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 7250.25,
       "change_vs_prev_bar_pct": -0.034,
-      "age_minutes": 76.4,
+      "age_minutes": 158.5,
       "is_fresh": false
     },
     "vix": {
@@ -250,18 +250,18 @@
       "bar_interval": "5m",
       "previous_bar_close": 28.15,
       "change_vs_prev_bar_pct": 0.604,
-      "age_minutes": 541.4,
+      "age_minutes": 623.5,
       "is_fresh": false
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6628,
-      "bar_time": "2026-11-26T06:10:00+00:00",
+      "price": 6.6586,
+      "bar_time": "2026-11-26T07:30:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6629,
-      "change_vs_prev_bar_pct": -0.002,
-      "age_minutes": 1.4,
+      "previous_bar_close": 6.6588,
+      "change_vs_prev_bar_pct": -0.003,
+      "age_minutes": 3.5,
       "is_fresh": true
     },
     "tnx": {
@@ -272,7 +272,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 4.85,
       "change_vs_prev_bar_pct": -0.041,
-      "age_minutes": 616.4,
+      "age_minutes": 698.5,
       "is_fresh": false
     },
     "semis": {
@@ -283,18 +283,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 8832.5,
       "change_vs_prev_bar_pct": -0.653,
-      "age_minutes": 1511.4,
+      "age_minutes": 1593.5,
       "is_fresh": true
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7235.0,
+      "price": 7228.25,
       "bar_time": "2026-11-26T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7195.75,
-      "change_vs_prev_bar_pct": 0.545,
-      "age_minutes": 71.4,
+      "change_vs_prev_bar_pct": 0.452,
+      "age_minutes": 153.5,
       "is_fresh": true
     },
     "spx": {
@@ -306,11 +306,10 @@
     }
   },
   "errors": [
-    "588940: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.588940&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
-    "588940: tencent: quote is stale",
-    "588940 etf_daily: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "588940: eastmoney: missing price, prior close or original timestamp",
+    "588940 etf_daily: insufficient daily bars",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
-    "513650: eastmoney: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/stock/get?secid=1.513650&fltt=2&fields=f2%2Cf5%2Cf6%2Cf1",
+    "513650: eastmoney: missing price, prior close or original timestamp",
     "513650: tencent: quote is stale",
     "513650 etf_daily: insufficient daily bars",
     "513650 etf_daily_tencent: Tencent daily K-line unavailable"
@@ -360,7 +359,7 @@
     "legacy_chatgpt_history": "NOT_IMPORTED_NOT_OVERWRITTEN"
   },
   "health": {
-    "etf_588940_fresh": false,
+    "etf_588940_fresh": true,
     "etf_513650_fresh": false,
     "spx_close_available": true,
     "es_available": true,
