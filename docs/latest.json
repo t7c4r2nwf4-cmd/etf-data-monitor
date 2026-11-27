@@ -1,37 +1,37 @@
 {
   "schema": "etf-feed-v2",
-  "collected_at": "2026-11-27T14:16:55.554012+08:00",
+  "collected_at": "2026-11-27T15:32:17.616894+08:00",
   "slot": "other",
   "quotes": {
     "588940": {
-      "price": 0.691,
+      "price": 0.719,
       "prev_close": 0.605,
-      "quote_time": "2026-11-27T14:16:57+08:00",
+      "quote_time": "2026-11-27T15:32:00+08:00",
       "source": "tencent_fallback",
-      "volume": 7049938.0,
+      "volume": 9307142.0,
       "turnover_cny": null,
       "code": "588940",
-      "pct_change": 14.215,
-      "age_minutes": -0.02,
-      "is_fresh": false,
-      "during_exchange_session": true,
-      "state": "stale_during_session",
+      "pct_change": 18.843,
+      "age_minutes": 0.29,
+      "is_fresh": true,
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
       "iopv": null,
       "premium_pct": null
     },
     "513650": {
-      "price": 1.899,
+      "price": 1.908,
       "prev_close": 1.864,
-      "quote_time": "2026-11-27T14:17:01+08:00",
+      "quote_time": "2026-11-27T15:32:19+08:00",
       "source": "tencent_fallback",
-      "volume": 2498715.0,
+      "volume": 3013314.0,
       "turnover_cny": null,
       "code": "513650",
-      "pct_change": 1.878,
-      "age_minutes": -0.09,
+      "pct_change": 2.361,
+      "age_minutes": -0.02,
       "is_fresh": false,
-      "during_exchange_session": true,
-      "state": "stale_during_session",
+      "during_exchange_session": false,
+      "state": "outside_exchange_session",
       "iopv": null,
       "premium_pct": null
     }
@@ -128,7 +128,7 @@
       },
       {
         "date": "2026-11-27",
-        "close": 0.695
+        "close": 0.719
       }
     ],
     "513650": [
@@ -222,7 +222,7 @@
       },
       {
         "date": "2026-11-27",
-        "close": 1.901
+        "close": 1.908
       }
     ]
   },
@@ -239,7 +239,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 7250.25,
       "change_vs_prev_bar_pct": -0.034,
-      "age_minutes": 1521.9,
+      "age_minutes": 1597.3,
       "is_fresh": false
     },
     "vix": {
@@ -250,18 +250,18 @@
       "bar_interval": "5m",
       "previous_bar_close": 26.78,
       "change_vs_prev_bar_pct": 0.075,
-      "age_minutes": 826.9,
+      "age_minutes": 902.3,
       "is_fresh": false
     },
     "usdcny": {
       "symbol": "CNY=X",
-      "price": 6.6552,
-      "bar_time": "2026-11-27T06:15:00+00:00",
+      "price": 6.6537,
+      "bar_time": "2026-11-27T07:30:00+00:00",
       "source": "yfinance_unofficial",
       "bar_interval": "5m",
-      "previous_bar_close": 6.6553,
-      "change_vs_prev_bar_pct": -0.002,
-      "age_minutes": 1.9,
+      "previous_bar_close": 6.654,
+      "change_vs_prev_bar_pct": -0.005,
+      "age_minutes": 2.3,
       "is_fresh": true
     },
     "tnx": {
@@ -272,7 +272,7 @@
       "bar_interval": "5m",
       "previous_bar_close": 4.85,
       "change_vs_prev_bar_pct": -0.041,
-      "age_minutes": 2061.9,
+      "age_minutes": 2137.3,
       "is_fresh": false
     },
     "semis": {
@@ -283,18 +283,18 @@
       "bar_interval": "1d",
       "previous_bar_close": 8832.5,
       "change_vs_prev_bar_pct": -0.653,
-      "age_minutes": 2956.9,
+      "age_minutes": 3032.3,
       "is_fresh": false
     },
     "es_daily": {
       "symbol": "ES=F",
-      "price": 7319.25,
+      "price": 7315.75,
       "bar_time": "2026-11-27T00:00:00-05:00",
       "source": "yfinance_unofficial",
       "bar_interval": "1d",
       "previous_bar_close": 7195.75,
-      "change_vs_prev_bar_pct": 1.716,
-      "age_minutes": 76.9,
+      "change_vs_prev_bar_pct": 1.668,
+      "age_minutes": 152.3,
       "is_fresh": true
     },
     "spx": {
@@ -307,7 +307,6 @@
   },
   "errors": [
     "588940: eastmoney: missing price, prior close or original timestamp",
-    "588940: tencent: quote is stale",
     "588940 etf_daily: insufficient daily bars",
     "588940 etf_daily_tencent: Tencent daily K-line unavailable",
     "513650: eastmoney: missing price, prior close or original timestamp",
@@ -360,7 +359,7 @@
     "legacy_chatgpt_history": "NOT_IMPORTED_NOT_OVERWRITTEN"
   },
   "health": {
-    "etf_588940_fresh": false,
+    "etf_588940_fresh": true,
     "etf_513650_fresh": false,
     "spx_close_available": true,
     "es_available": true,
